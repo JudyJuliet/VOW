@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="#e2f5e9"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity" >
+
+     <RelativeLayout 
+	  android:layout_width="match_parent"
+	  android:layout_height="50dip"
+	  android:gravity="center_vertical"
+	  android:padding="10dip" >
+
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:textSize="20sp"
+    android:text="返回"
+    android:id="@+id/re_txtBack"
+    android:clickable="true"  />
+   
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:textSize="20sp"
+    android:text="保存"
+    android:id="@+id/re_txtSave"
+    android:clickable="true"  />
+   
+</RelativeLayout> 
+
+  <TextView
+      android:id="@+id/re_txtPasswordInfor"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="30dp"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/text_bg"
+      android:clickable="true"
+      android:gravity="center"
+      android:paddingBottom="2dip"
+      android:paddingLeft="15dip"
+      android:paddingRight="15dip"
+      android:paddingTop="2dip"
+      android:text="设置密码"
+      android:textColor="#7495c3"
+      android:textSize="20sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    android:layout_marginBottom="10dip"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/radius_drawable_bg"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+      android:id="@+id/info_username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+          android:id="@+id/re_oldPass"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="原密码：" 
+          />
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:padding="5dip"
+        android:textSize="16sp" 
+        android:id="@+id/re_edtOldPass"
+        android:inputType="text"/>
+    </LinearLayout>
+
+    
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_signature"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置密码："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:inputType="textPassword"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:id="@+id/re_edtNewPass1"
+         />
+    </LinearLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_birthday"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再次输入新密码："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:inputType="textPassword"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:id="@+id/re_edtNewPass2" 
+       />
+    </LinearLayout>
+    
+    
+  </LinearLayout>
+  
+  <TextView
+      android:id="@+id/re_txtMore"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="24dp"
+      android:background="@drawable/text_bg"
+      android:clickable="true"
+      android:gravity="center"
+      android:paddingBottom="2dip"
+      android:paddingLeft="15dip"
+      android:paddingRight="15dip"
+      android:paddingTop="2dip"
+      android:text="注册"
+      android:textColor="#7495c3"
+      android:textSize="20sp" />
+
+</LinearLayout>

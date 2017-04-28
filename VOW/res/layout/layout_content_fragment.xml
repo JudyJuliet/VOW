@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+       	android:layout_width="match_parent"
+    	android:layout_height="48dp" >
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/main_choice_layout"
+        layout="@layout/main_choice_layout" />
+    <com.vow.customerView.VowScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewflipper_scrollview"
+        android:scrollbars="none"
+        android:focusable="false"
+       	android:layout_above="@id/main_choice_layout"
+        android:layout_below="@id/content_layout">
+      <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ViewFlipper
+            android:id="@+id/mViewFliper_vf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true">
+				<LinearLayout 
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="vertical">
+			        <ImageView 
+			            android:layout_width="match_parent"
+			            android:layout_height="240dip"
+			            android:background="@drawable/accident"
+			            />
+			        
+			    </LinearLayout>
+			    <LinearLayout 
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content">
+			        <ImageView 
+			            android:layout_width="match_parent"
+			            android:layout_height="240dip"
+			            android:background="@drawable/gentleman"/>
+					    </LinearLayout>
+		      <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		        <ImageView 
+		            android:layout_width="match_parent"
+		            android:layout_height="240dip"
+		            android:background="@drawable/learner"/>
+		    </LinearLayout>
+		      <LinearLayout 
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+		        <ImageView 
+		            android:layout_width="match_parent"
+		            android:layout_height="240dip"
+		            android:background="@drawable/xzq"/>
+		    </LinearLayout>
+        </ViewFlipper>
+      	<LinearLayout
+	        android:id="@+id/home_date_ratio_ly" 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/mViewFliper_vf">
+         	<include  layout="@layout/home_data_bar"/>  
+        </LinearLayout>
+ 
+      	<LinearLayout 
+      	    android:id="@+id/home_content_listview_layout"
+      	    android:layout_width="match_parent"
+      	    android:layout_height="wrap_content"
+      	    android:layout_below="@id/home_date_ratio_ly">
+      	  <include  layout="@layout/home_listview"/>  
+      	</LinearLayout>
+      	
+        </RelativeLayout> 
+        
+    </com.vow.customerView.VowScrollView>
+
+</RelativeLayout>

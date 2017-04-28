@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.etc.vow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+     <!-- 监听电话呼出 -->  
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>  
+    <!-- 监听电话状态改变 -->  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />   
+  
+    <application
+        android:name="com.vow.app.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vow.login.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.etc.vow.GuideActivity"
+            android:label="@string/title_activity_guide" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.ListViewActivity"
+            android:label="@string/title_activity_list_view" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.UpdateUserInfoActivity"
+            android:label="@string/title_activity_update_user_info" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SketchActivity"
+            android:label="@string/title_activity_sketch" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.ContainerActivity"
+            android:label="@string/title_activity_container" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.ContentListActivity"
+            android:label="@string/title_activity_content_list" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.CommentingActivity"
+            android:label="@string/title_activity_commenting" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.CommentListActivity"
+            android:label="@string/title_activity_comment_list" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.PicturePagerActivity"
+            android:label="@string/title_activity_picture_pager" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.RecordActivity"
+            android:label="@string/title_activity_record" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.GridViewColorActivity"
+            android:label="@string/title_activity_grid_view_color" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SaveSketchActivity"
+            android:label="@string/title_activity_save_sketch" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.VisitorActivity"
+            android:label="@string/title_activity_visitor" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.NewContentActivity"
+            android:label="@string/title_activity_new_content" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.FindPicturesActivity"
+            android:label="@string/title_activity_find_pictures" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.VisiterActivity"
+            android:label="@string/title_activity_visiter" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SelfInfoActivity"
+            android:label="@string/title_activity_self_info" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.HomeSearchActivity"
+            android:label="@string/title_activity_home_search" >
+        </activity>
+        <activity
+            android:name="com.etc.vow.SearchContentActivity"
+            android:label="@string/title_activity_search_content" >
+        </activity>
+    </application>
+
+</manifest>

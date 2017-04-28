@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_home"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/global_blue"
+    android:orientation="horizontal" >
+
+    
+    <com.vow.utils.AvatarImageView  
+	    android:layout_width="40dip"  
+	   	android:layout_height="40dip"  
+	    android:layout_centerHorizontal="true"  
+	   	android:src="@drawable/default_user_photo"
+	   	android:layout_alignParentLeft="true"
+	   	android:layout_marginLeft="5dip"
+	   	android:layout_marginTop="5dp"
+	   	android:clickable="true"
+	   	android:id="@+id/avgPhoto"
+  	/> 
+      <EditText
+        android:id="@+id/home_search_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="5dp"
+        android:background="@drawable/search_edittext_shape" 
+         android:ems="10"
+        android:hint="Search..." />
+   
+     <ImageButton 
+        android:id="@+id/title_shake_bn"
+        android:layout_width="45dip"
+        android:layout_height="45dip"
+        android:layout_marginRight="5dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shake"
+        android:contentDescription="@layout/tab_home_layout"/>
+</LinearLayout>

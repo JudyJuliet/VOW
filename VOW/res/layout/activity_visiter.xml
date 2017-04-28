@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#e2f5e9">
+  <RelativeLayout 
+	  android:layout_width="match_parent"
+	  android:layout_height="50dip"
+	  android:gravity="center_vertical"
+	  android:id="@+id/visitor_title_layout"
+	 >
+
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_centerVertical="true"
+    android:textSize="17sp"
+    android:text="返回"
+    android:id="@+id/txtBackVisit"
+    android:clickable="true"
+    />
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+   	android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+    android:layout_centerVertical="true"
+   	android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:text="用户"
+   
+    />
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+   	android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_centerVertical="true"
+    android:textSize="17sp"
+    android:text="关注"
+    android:id="@+id/txtVisitLike"
+    android:clickable="true"
+    />
+</RelativeLayout>
+<com.vow.customerView.VowScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/visitor_scrollview"
+        android:scrollbars="none"
+        android:focusable="false"
+       android:layout_centerInParent="true"
+       android:layout_below="@id/visitor_title_layout"
+       >
+<RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/head_bg"
+            android:layout_width="match_parent"
+          	android:layout_height="250dp"
+           
+            android:layout_gravity="center">
+
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp">
+
+	 
+			<com.vow.utils.AvatarImageView  
+			    android:layout_width="96dip"  
+			   	android:layout_height="96dip" 
+			   	android:src="@drawable/default_user_photo" 
+			   	android:id="@+id/imgVisitPhoto"   
+			  	
+		  	/> 
+		  <TextView
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:text="Amano Ginji"
+		      android:background="@drawable/text_bg"
+		      android:clickable="true"
+		      android:gravity="center"
+		      android:paddingBottom="2dip"
+		      android:paddingLeft="15dip"
+		      android:paddingRight="15dip"
+		      android:paddingTop="2dip"
+		      android:textColor="#7495c3"
+		      android:textSize="17sp"
+		      android:id="@+id/txtVisitName"
+		      
+		      android:layout_marginTop="10dp"
+		      />
+		  <TextView
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:text="该用户还未填写生日"
+		      android:background="@drawable/text_bg"
+		      android:clickable="true"
+		      android:gravity="center"
+		      android:paddingBottom="2dip"
+		      android:paddingLeft="15dip"
+		      android:paddingRight="15dip"
+		      android:paddingTop="2dip"
+		      android:textColor="#7495c3"
+		      android:textSize="15sp"
+		      android:id="@+id/txtVisitAge"
+		     
+		      android:layout_marginTop="8dp"/>
+	 	</LinearLayout>
+	</FrameLayout>
+<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content" 
+     android:orientation="vertical" 
+     android:layout_below="@id/head_bg"
+     >
+	<TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="5dp"
+      android:background="#44ffffff" />
+ 	<LinearLayout
+      android:id="@+id/info_tag"
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+     
+      android:gravity="center"
+      android:layout_marginLeft="30dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="5dp" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ta的标签："
+        android:textColor="#7495c3"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:text="Tag"
+        android:id="@+id/txtVisitTag" 
+        android:textColor="#7495c3"/>
+    </LinearLayout>
+  	<TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="5dp"
+      android:background="#44ffffff" />
+ 	<LinearLayout
+      android:id="@+id/info_signature"
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+     
+      android:gravity="center"
+      android:layout_marginLeft="30dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="5dp" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ta的签名："
+        android:textColor="#7495c3"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:text="Get BACK"
+        android:id="@+id/txtVisitSignature" 
+        android:textColor="#7495c3"/>
+    </LinearLayout>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="5dp"
+      android:background="#44ffffff" />
+    <LinearLayout
+      android:id="@+id/degree_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:gravity="center"
+      
+      android:layout_marginLeft="30dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="5dp" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等     级："
+        android:textColor="#7495c3"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:text="Hahah"
+        android:id="@+id/txtVisitDegree" 
+        android:textColor="#7495c3"/>
+    </LinearLayout>
+    
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="5dp"
+      android:background="#44ffffff" />
+    <LinearLayout
+      android:id="@+id/location_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:gravity="center"
+
+      android:layout_marginLeft="30dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="5dp" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ta 的位置："
+        android:textColor="#7495c3"
+        />
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:text="天津市南开区"
+        android:textColor="#7495c3"
+        android:id="@+id/txtVisitLocation"/>
+    </LinearLayout>
+     <TextView
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="5dp"
+      android:background="#44ffffff" />
+    <LinearLayout
+      android:id="@+id/post_layout"
+      android:layout_width="fill_parent"
+      android:layout_height="50dp"
+      android:gravity="center"
+
+      android:layout_marginLeft="30dp"
+      android:orientation="horizontal"
+      android:layout_marginTop="5dp" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ta 的动态："
+        android:textColor="#7495c3"/>
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:text="点击查看ta的动态"
+        android:textColor="#7495c3"
+        android:clickable="true"
+        android:id="@+id/txtVisitPost"/>"
+    </LinearLayout>
+ </LinearLayout>
+ </RelativeLayout>
+</com.vow.customerView.VowScrollView >
+
+
+</RelativeLayout>

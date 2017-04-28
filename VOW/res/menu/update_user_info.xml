@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/up_take_photo"
+        android:title="拍照"/>
+
+    <item android:id="@+id/up_select_photo"
+        android:title="从相册中选取图片"/>
+    
+    <item android:id="@+id/up_cancel_change_photo"
+        android:title="取消"/>
+</menu>

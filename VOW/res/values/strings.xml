@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VOW</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_list_view">ListViewActivity</string>
+
+    <!-- 自定义组件 -->
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">松开可以刷新</string>
+    <string name="lastUpdateTime">最近更新：%s</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+
+    <!-- 消除警告，可忽略 -->
+    <string name="d">图片描述</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_update_user_info">UpdateUserInfoActivity</string>
+    <string name="title_activity_sketch">SketchActivity</string>
+    <string name="title_activity_container">ContainerActivity</string>
+    <string name="title_activity_content_list">ContentListActivity</string>
+    <string name="title_activity_commenting">CommentingActivity</string>
+    <string name="title_activity_comment_list">CommentListActivity</string>
+    <string name="title_activity_picture_pager">PicturePagerActivity</string>
+    <string name="title_activity_record">RecordActivity</string>
+    <string name="title_activity_grid_view_color">GridViewColorActivity</string>
+    <string name="title_activity_save_sketch">SaveSketchActivity</string>
+    <string name="filename">文件名：</string>
+    <string name="dialog_save">保存</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_visitor">VisitorActivity</string>
+    <string name="title_activity_new_content">NewContentActivity</string>
+
+    <!-- 自定义对话框组件 -->
+    <string name="add_music">选择音乐文件</string>
+    <string name="add_record">录音</string>
+    <string name="title_activity_find_pictures">FindPicturesActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="add_camera">使用相机</string>
+    <string name="add_gallery">查看图库</string>
+    <string name="title_activity_visiter">VisiterActivity</string>
+    <string name="title_activity_self_info">SelfInfoActivity</string>
+    <string name="title_activity_home_search">HomeSearchActivity</string>
+    <string name="title_activity_search_content">SearchContentActivity</string>
+
+</resources>

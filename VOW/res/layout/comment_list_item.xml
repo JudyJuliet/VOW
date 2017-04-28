@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+        <com.vow.utils.AvatarImageView
+            android:id="@+id/comment_list_item_userphoto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/default_user_photo" />
+   
+ <LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="5dp"
+     android:layout_marginRight="10dp"
+     android:orientation="vertical" >
+
+     <TextView
+         android:id="@+id/comment_list_item_username"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="用户名"
+         android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/comment_list_item_usercomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论"
+        android:textSize="15sp" />
+
+     </LinearLayout>
+
+</LinearLayout>

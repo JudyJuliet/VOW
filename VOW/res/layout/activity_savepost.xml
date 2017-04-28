@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/save_dialog"
+    android:gravity="center_horizontal"
+    android:background="#7adfb8" >
+    <GridView 
+        android:id="@+id/gridSave" 
+        android:layout_width="match_parent"
+		android:paddingTop="0dip" 
+		android:paddingLeft="3dip"
+		android:paddingRight="3dip" 
+		android:paddingBottom="3dip"
+		android:columnWidth="170dp" 
+		android:layout_height="300dp"
+		android:numColumns="3" 
+		android:verticalSpacing="10dp"
+		android:horizontalSpacing="10dp"
+		android:stretchMode="columnWidth"
+		android:gravity="center"
+		android:background="#e2f5e9">
+	</GridView>
+	
+	
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_gravity="center"
+		android:background="#7adfb8"
+		>
+	<TextView
+	    android:text="@string/filename"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp" 
+		android:id="@+id/txtSaveFileName"
+		android:gravity="center"
+		android:textColor="#ffffff"
+		android:background="#7adfb8"
+		android:textSize="20sp"
+		/>
+	<EditText 
+		android:layout_width="150dip"
+		android:layout_height="30dp" 
+		android:id="@+id/fileName"
+		android:inputType="text"
+		android:layout_toRightOf="@id/txtSaveFileName"
+		android:hint="键入文件名"
+		android:textCursorDrawable="@null" 
+		android:textColorHint="#7adfb8"
+		android:singleLine="true"
+		android:textSize="17sp"
+		android:textStyle="bold"
+		android:background="#e2f5e9"
+		android:layout_marginTop="10dp"
+		android:textColor="@color/global_blue"
+	/>
+	<Button 
+		android:text="@string/dialog_save"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp" 
+		android:id="@+id/btnSaveDraw"
+		android:layout_toRightOf="@id/fileName"
+		android:background="#7adfb8"
+		android:textColor="#ffffff"
+		android:textSize="20sp"
+	/>
+	</RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    
+     >
+
+	
+    <Button
+        android:id="@+id/btn_audio"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="76dp"
+        android:layout_marginTop="87dp"
+        android:background="@drawable/btn_select_audio"
+        android:text="音频"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:clickable="true" />
+    <Button
+        android:id="@+id/btn_string"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/btn_audio"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@+id/btn_audio"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/btn_select_string"
+        android:text="文字"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:clickable="true"  />
+
+    <Button
+        android:id="@+id/btn_picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/btn_audio"
+        android:layout_below="@+id/btn_string"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/btn_select_picture"
+        android:text="图片"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:clickable="true"  />
+
+     <TextView
+        android:id="@+id/txt_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:text="01"
+        android:textColor="#7495c3"
+        android:textSize="40sp" 
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txt_monthyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txt_day"
+        android:layout_toRightOf="@+id/txt_day"
+        android:layout_marginTop="10dp"
+        android:text="01/1970"
+        android:textColor="#7495c3"
+      />
+
+		
+    <TextView
+        android:id="@+id/txt_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt_day"
+        android:layout_toRightOf="@+id/txt_day"
+        android:layout_above="@+id/txt_monthyear"
+        android:text="星期三"
+        android:textColor="#7495c3" />
+
+	<TextView
+	    android:id="@+id/txtCancelPost"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/tabbar_compose_background_icon_close"
+	     />
+ 	
+ </RelativeLayout>  
+
+
+

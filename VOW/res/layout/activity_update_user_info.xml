@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#e2f5e9"
+    tools:context=".UpdateUserInfoActivity" >
+
+    <RelativeLayout 
+	  android:layout_width="match_parent"
+	  android:layout_height="50dip"
+	  android:gravity="center_vertical"
+	  android:padding="10dip" >
+
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+    android:layout_alignParentLeft="true"
+    android:layout_centerVertical="true"
+    android:textSize="20sp"
+    android:text="返回"
+    android:id="@+id/up_txtBack"
+    android:clickable="true"
+    />
+  <TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#7495c3"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:textSize="20sp"
+    android:text="保存"
+    android:id="@+id/up_txtSave"
+    android:clickable="true"
+    />
+</RelativeLayout>
+ <com.vow.utils.AvatarImageView
+    android:layout_width="50dip"  
+   	android:layout_height="50dip"  
+    android:layout_centerHorizontal="true"  
+   	android:src="@drawable/default_user_photo" 
+   	android:id="@+id/up_photo"   
+  	android:layout_marginTop="5dp"
+  	/> 
+
+  <TextView
+      android:id="@+id/txtDraw"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/text_bg"
+      android:clickable="true"
+      android:gravity="center"
+      android:paddingBottom="2dip"
+      android:paddingLeft="15dip"
+      android:paddingRight="15dip"
+      android:paddingTop="2dip"
+      android:text="个人信息"
+      android:textColor="#7495c3"
+      android:textSize="20sp" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dip"
+    android:layout_marginRight="20dip"
+    android:layout_marginBottom="10dip"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/radius_drawable_bg"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <LinearLayout
+      android:id="@+id/info_username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:padding="5dip"
+        android:textSize="16sp" 
+        android:id="@+id/up_edtUsername"/>
+    </LinearLayout>
+
+    
+     <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_signature"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="个性签名："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:inputType="text"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:id="@+id/up_edtSignature" />
+    </LinearLayout>
+    <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_birthday"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生日："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:inputType="date"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:id="@+id/up_edtBirthday" />
+    </LinearLayout>
+     <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_score"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="地点：" />
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:inputType="text"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:id="@+id/up_edtLocation" />
+    </LinearLayout>
+        
+ <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_email"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="邮箱："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:padding="5dip"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:id="@+id/up_edtEmail" />
+    </LinearLayout>
+     <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_phone"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="电话："/>
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="#00000000"
+        android:inputType="phone"
+        android:padding="5dip"
+        android:textSize="16sp"
+        android:id="@+id/up_edtPhone" />
+    </LinearLayout>
+     <View
+      android:layout_width="match_parent"
+      android:layout_height="1px"
+      android:layout_marginBottom="5dip"
+      android:layout_marginTop="5dip"
+      android:background="#eeeeee" />
+
+    <LinearLayout
+      android:id="@+id/info_gender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_vertical"
+      
+      android:orientation="horizontal" >
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别："/>
+
+      <RadioGroup
+       android:id="@+id/up_radioGroupGender"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:layout_marginLeft="10dip"
+       
+       android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/up_radiomale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男生"
+            android:textSize="14dp"
+            android:textColor="#272727"
+           />
+
+        <RadioButton
+            android:id="@+id/up_radiofemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女生"
+            android:textSize="14dp"
+            android:textColor="#272727"
+            />
+        <RadioButton
+            android:id="@+id/up_radiounknown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蒙面侠"
+            android:textSize="14dp"
+            android:textColor="#272727"
+             />
+       
+    </RadioGroup>
+    </LinearLayout>
+    
+  </LinearLayout>
+    <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:text="修改密码"
+      android:background="@drawable/text_bg"
+      android:clickable="true"
+      android:gravity="center"
+      android:paddingBottom="2dip"
+      android:paddingLeft="15dip"
+      android:paddingRight="15dip"
+      android:paddingTop="2dip"
+      android:textColor="#7495c3"
+      android:textSize="17sp"
+      android:id="@+id/up_txtModifyPassword"
+      android:layout_marginTop="0dp"/>
+
+</LinearLayout>
+
+

@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context=".NewContentActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dip" 
+        android:background="@color/global_blue">
+
+        <TextView
+            android:id="@+id/newContent_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/newContent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"          
+            android:text="创建动态"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/newContent_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:text="发布" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+    <EditText
+        android:id="@+id/new_content_edt"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="写下您此刻的心情..."
+        android:inputType="textMultiLine"
+        android:maxLines="15" />
+    </LinearLayout>
+    
+      <!-- 音频 -->
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+      <ImageView
+            android:id="@+id/new_content_music_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/add_music"
+            
+           />
+
+      <TextView
+          android:id="@+id/new_content_music_filenametxv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="2dp" 
+          android:visibility="gone"/>
+
+      </LinearLayout>
+          
+    
+      
+      </LinearLayout>
+    
+    <!-- 九张图 -->
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+       <ImageView
+            android:id="@+id/new_content_image1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/default_add_img"
+           />
+
+        <ImageView
+            android:id="@+id/new_content_image2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/default_add_img" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/new_content_image3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/default_add_img" 
+            android:visibility="gone"/>
+   
+      <ImageView
+            android:id="@+id/new_content_image4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_add_img" 
+            android:visibility="gone"/>
+       </LinearLayout>
+          
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <ImageView
+            android:id="@+id/new_content_image5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/default_add_img" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/new_content_image6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/default_add_img"
+            android:visibility="gone" />
+
+         <ImageView
+            android:id="@+id/new_content_image7"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="1dp"
+            android:src="@drawable/default_add_img"
+             android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/new_content_image8"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_add_img"
+            android:visibility="gone" />
+    </LinearLayout>
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <ImageView
+            android:id="@+id/new_content_image9"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_add_img" 
+            android:visibility="gone"/>
+
+    </LinearLayout>  
+
+      <include
+          android:id="@+id/new_content_taglayout"
+          android:layout_height="174dp"
+          layout="@layout/activity_search" />
+   
+</LinearLayout>

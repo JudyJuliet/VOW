@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7adfb8"
+    tools:context=".LoginActivity" >
+
+    <include
+        android:id="@+id/main_title"
+        layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_title"
+        android:orientation="vertical" 
+        >
+
+        <ImageView
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ico" 
+            />
+		 <TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="Voice of World"
+			android:textColor="#ffffff"
+			android:textSize="24sp" 
+			/>
+
+	    <TextView
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:gravity="center"
+		      android:text="Show Your ideas"
+		      android:textColor="#ffffff"
+		      android:textSize="17sp"
+		      android:layout_marginBottom="10dip" />
+	        
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dip" >
+	 	<include
+	       android:id="@+id/input_layout"
+	       android:layout_width="match_parent"
+	       android:layout_height="130dip"
+	       android:layout_alignParentLeft="true"
+	       layout="@layout/input_layout"
+	       android:layout_marginTop="20sp" />
+        
+        <include
+            android:id="@+id/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            layout="@layout/layout_progress"
+            android:visibility="gone" />
+   
+         <CheckBox
+           android:id="@+id/rememberpass"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/input_layout"
+           android:layout_centerHorizontal="true"
+           android:text="记住密码"
+           android:textColor="#ffffff" />
+        
+    <TextView
+        android:id="@+id/main_btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/text_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="2dip"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:onClick="login" />
+	</RelativeLayout>
+</RelativeLayout>
